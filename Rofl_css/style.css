@@ -28,14 +28,33 @@ top:100px;
     left:10px;
 }
 
+#flipbook .page{
+    background: #fff;
+    color:#000;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content__page{
 font-size:20px;
 }
 .content__first_page{
 
 }
+.p3{
+    align-items: flex-start !important;
+}
+
+.desc, .avatar{
+    margin: 10px;
+    text-align:center;
+}
+
+
 .content__last_page{
-color:white;
+    --color:white;
     font-size:2.5em;
 }
 .content__last_page>del:first-child{
@@ -54,16 +73,9 @@ color:white;
     display:none;
 }
 
-#flipbook .page{
-    background: #fff;
-    color:#000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .gradientOGY{
     background: linear-gradient(75deg,#faa707 10%, #84fa07 30%, #f9fa07 85%) !important;
+    color:black !important;
     --background: radial-gradient(circle farthest-corner at 100px 50px,#faa707, #84fa07, #f9fa07 )!important;
 }
 /* ниже parallax стили */
@@ -86,16 +98,30 @@ color:white;
     width: 110%;
     height: 110%;
 }
-.layer_bg{
-    background: url("../Rofl_res/s1200.jpg") center no-repeat;
+
+.layer_bg,.layer_1,.layer_2{
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
-.layer_cloud{
-     background: url("../Rofl_res/clouds2.png") center no-repeat;
-     background-size: cover;
- }
-.layer_skyBlue{
-    background: url("../Rofl_res/blueSky.png") center no-repeat;
-    background-size: cover;
+.layer_SnowMountain{
+    background-image: url("../Rofl_res/scene1/SnowMountain.jpg") ;
+}
+.layer_blueSky{
+    background-image: url("../Rofl_res/scene1/blueSky.png") ;
     opacity: 0.1;
+}
+.layer_clouds{
+     background-image: url("../Rofl_res/scene1/clouds2.png") ;
+ }
+
+.layer_forest{
+    background-image: url("../Rofl_res/scene2/forest.jpg") ;
+}
+.layer_ravens{
+    background-image: url("../Rofl_res/scene2/ravens.png");
+}
+.layer_SpiritForest{
+    background-image: url("../Rofl_res/scene2/forest_spirit.png") ;
+    opacity: 0.5;
 }
